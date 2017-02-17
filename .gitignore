@@ -1,0 +1,4 @@
+node_modules/
+Music-win32-x64/
+npm-debug*
+favicon.ico
