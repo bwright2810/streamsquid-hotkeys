@@ -40,13 +40,13 @@ app.on('ready', createWindow)
 
 const globalShortcut = electron.globalShortcut;
 app.on('ready', function() {
-  globalShortcut.register('Ctrl+Alt+Shift+Up', function() {
+  globalShortcut.register('CommandOrControl+Alt+Shift+Up', function() {
     mainWindow.webContents.send('ping', 'play-pause');
   });
-  globalShortcut.register('Ctrl+Alt+Shift+Right', function() {
+  globalShortcut.register('CommandOrControl+Alt+Shift+Right', function() {
     mainWindow.webContents.send('ping', 'next');
   });
-  globalShortcut.register('Ctrl+Alt+Shift+Left', function() {
+  globalShortcut.register('CommandOrControl+Alt+Shift+Left', function() {
     mainWindow.webContents.send('ping', 'previous');
   });
 });
